@@ -1,0 +1,13 @@
+{
+  "menu": [
+    { "name": "Home", "link": "#home" },
+    { "name": "Projetos", "link": "#projetos" },
+    { "name": "Sobre", "link": "#sobre" },
+    { "name": "Contato", "link": "#contato" }
+  ],
+  "socialLinks": [
+    { "platform": "GitHub", "url": "https://github.com/elidianaandrade", "icon": "bi-github" },
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/elidianaandrade/", "icon": "bi-linkedin" },
+    { "platform": "Instagram", "url": "", "icon": "bi-instagram" }
+  ]
+}
