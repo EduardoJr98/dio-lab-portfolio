@@ -1,3 +1,33 @@
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const menuContainer = document.getElementById("dynamic-menu");
+      data.menu.forEach((item) => {
+        const menuItem = document.createElement("li");
+        menuItem.classList.add("menu__item");
+        menuItem.innerHTML = `
+          <a class="menu__link" href="${item.link}">
+            <span class="menu__text">${item.name}</span>
+          </a>
+        `;
+        menuContainer.appendChild(menuItem);
+      });
+
+      const socialLinksContainer = document.getElementById("dynamic-social-links");
+      data.socialLinks.forEach((link) => {
+        const socialItem = document.createElement("li");
+        socialItem.innerHTML = `
+          <a class="menu__link" href="${link.url}" target="_blank">
+            <i class="menu__icon ${link.icon}"></i>
+          </a>
+        `;
+        socialLinksContainer.appendChild(socialItem);
+      });
+    })
+    .catch((error) => console.error("Erro ao carregar o JSON:", error));
+});
+
 const toggleTheme = document.getElementById("toggleTheme");
 const rootHtml = document.documentElement;
 const accordionHeaders = document.querySelectorAll(".accordion__header");
