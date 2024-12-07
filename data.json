@@ -6,8 +6,8 @@
     { "name": "Contato", "link": "#contato" }
   ],
   "socialLinks": [
-    { "platform": "GitHub", "url": "https://github.com/elidianaandrade", "icon": "bi-github" },
-    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/elidianaandrade/", "icon": "bi-linkedin" },
-    { "platform": "Instagram", "url": "", "icon": "bi-instagram" }
+    { "platform": "GitHub", "url": "https://github.com", "icon": "bi-github" },
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com", "icon": "bi-linkedin" },
+    { "platform": "Instagram", "url": "https://www.instagram.com", "icon": "bi-instagram" }
   ]
 }
